@@ -1,0 +1,450 @@
+* {    padding: 0px;
+    margin: 0;
+    box-sizing: border-box;}
+
+body{ font-family: 'Poppins', sans-serif;
+    /* background-color: black; */
+    size: 100vh;
+    }
+
+/* section {width: 100%;} */
+
+    /* header */
+
+.header{display:block;
+    width: 100%;
+    background-color: black;
+}
+.encabezado {
+    display: flex;
+    /* position: bottom; */
+    height: 100px;
+    width: 100%;
+    justify-content: space-around;
+    /* position: fixed; */
+}
+.encabezado__icono {
+    display: none;
+}
+
+.nav_ul {display: flex;
+    text-decoration:none;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.5);
+    justify-content:space-between;
+    height: 80%;
+}
+
+.nav_li {display: flex;
+        list-style: none;
+        text-decoration:none;
+        color: rgb(242, 242, 242, 0.5);
+        justify-content:space-around;
+        font-weight: bold;
+}
+
+ul li {list-style: none;
+    display:flex;
+    flex-direction:row;
+    padding: 1rem;
+}
+
+img.imagenLogo{
+    height: 100px;
+    display: flex;
+    object-fit: contain;
+    align-items: flex-end;
+}
+/* .animacion {animation-name: primera;
+animation-duration: 2s;
+animation-iteration-count:5s; 
+}
+
+@keyframes primera{
+    from {scale:1 }
+    to {scale:1.5}
+} */
+
+
+img.imagenLogo2{
+    height: 50px;
+    display: flex;
+    margin-top: 20px;
+    object-fit: contain;
+    align-items: center;
+/*     
+    align-items: center;
+
+    margin-left: -150px; */
+}
+    /* termina header */
+
+    /* body */
+
+main .contenido {display: flex;
+    text-align:justify;
+    height: 100vh;
+    position: relative;
+    }
+
+    /* titulo */
+main .contenido div h1{ font-size: 2.5rem ;
+    /* background-color: red; */
+width: 100%;
+position: absolute;
+top: 10%;
+left: 55%;}
+
+/* resalta palabra*/
+main .contenido div h1 span{color: rgb(255, 255, 255);
+}
+main .contenido .imgPrincipal {width: 100%;
+    /* height: 100%;  */
+    object-fit:cover;
+    display: block;
+}
+
+
+  /*experiencias */
+
+main .contenido .parrafo
+{color: rgb(12, 12, 12);
+    border: 50% aliceblue;
+    border-radius: 15px;
+    stroke: aliceblue;
+    text-align: justify;
+    padding: 15px;
+    position: absolute;
+    width: 500px;
+    height:fit-content;
+    top: 20%;   
+    left: 55%;
+    background-color: rgba(255, 255, 255, 0.25)}
+
+
+    /* bio */
+    .contenido_bio
+    {display: grid;
+        padding: 3%;
+        height: 30%;
+        width:fit-content ;
+    grid-template-columns: 95%;
+    grid-template-rows:10% ;
+    grid-template-areas: 
+        "ele1  " 
+        "ele2  "
+        "ele3 " ;
+    background-color: rgb(0, 0, 0);
+    }
+
+.grid__1{grid-area: ele1;
+        margin-left: 20px;
+        font-size: 2.5rem ;
+        color: aliceblue;
+        /* position: absolute; */
+    }
+
+main .parrafo_bio h3
+        {color: rgb(12, 12, 12);
+            grid-area: ele3;
+            border: 50% aliceblue;
+            border-radius: 12px;
+            stroke: aliceblue;
+            /* margin-top: 50px; */
+            /* text-align: justify; */
+            padding: 15px;
+            /* position: absolute; */
+            height:fit-content;
+            background-color: rgba(255, 255, 255, 0.25)}
+            
+div .imgPrincipal--grande {width: 100%;
+        /* height: 100%; */
+        grid-area: ele2;
+        object-fit: cover;
+        border: 50% aliceblue;
+            border-radius: 12px;
+        }
+    
+
+.botonPromos
+{background-color: rgba(9, 9, 9, 0.021);
+color: aliceblue;
+border: 10px ;
+border-style:inherit;
+line-break: normal;
+position: absolute;
+top: 70%;   
+left: 45%;
+display: flex;
+align-items: center;
+font-size: 2rem }
+
+.botonComprar
+{background-color: rgba(9, 9, 9, 0.021);
+color: aliceblue;
+border: 10px ;
+font-weight: 700;
+border-style:inherit;
+line-break: normal;
+position: absolute;
+top: 6050%;   
+left: 65%;
+display: flex;
+align-items: center;
+font-size: 2rem }
+
+.planillaContacto
+{color: rgb(12, 12, 12);
+    border: 50% aliceblue;
+    border-radius: 12px;
+    stroke: aliceblue;
+    text-align: justify;
+    padding: 5px;
+    width: 1000px;
+    height:fit-content;
+    top: 30%;   
+    left: 5%;
+    background-color: rgba(255, 255, 255, 0.25)}
+
+main .parrafo_paquetes
+    {color: rgb(12, 12, 12);
+    border: 50% aliceblue;
+    border-radius: 12px;
+    stroke: aliceblue;
+    text-align: justify;
+    padding: 2rem;
+    width: 800px;
+    height:fit-content;
+    left: 5%;
+    background-color: rgba(255, 255, 255, 0.25)}    
+/* pagina experiencias */
+
+
+main .contenido_exp  {display: flex;
+
+    /* flex-direction: row; */
+    /* image-resolution: 300px; */
+    /* text-align: center;
+    justify-items: center; */
+    /*     text-align:justify; */
+    height: 90%;
+    width: 100vw; 
+    }
+
+main .contenido_exp .columnas_exp
+    {flex-wrap: wrap;
+    padding-left: 10%;
+    border: black 12px;
+    align-items: center;
+    height: 50%;
+    width: 40%; }
+
+main .contenido_exp .tituloExp
+{  
+    margin-top: 30px;
+    justify-content: center;
+    font-size: 1.5rem ;
+    color: black;
+    width: 100%;
+    /* margin: 1rem; */
+    text-align: center;
+/* text-shadow:20px */
+}
+
+/* PARRAFOS */
+
+main .contenido_exp .parrafoExp
+{color: rgb(12, 12, 12);
+    display:flex;
+    font-size: 16px;
+    border-radius: 5px;
+    text-align: justify;
+    padding: 1rem;
+    width:100%;
+    height: 50%;
+}    
+main .contenido_exp .imgPrincipalExperiencias 
+{ size-adjust:inherit;
+    /* max-width: 400px; */
+    max-height: 350px;
+    align-items: center;   
+/* margin-left: 10%; */
+    padding: 15px;
+display: block;
+border-image: black 15px;
+}
+
+    /* termina body */
+
+        /* footer*/
+.pie 
+    {background-color: black;
+    align-items:center; 
+    display: flex ;
+    justify-content:space-around;
+    color: aliceblue;
+    font-size: 16px;
+    padding: 15px;
+    height: 100%;
+    max-width: 100%;
+} 
+
+.pieElementos
+{max-height: 100px;
+max-height: 100px;}
+
+a.abrir {display: none;}
+
+/* .abrir
+{font-size: 20px rgb(0, 170, 255);
+} */
+
+/* .fa-brands{
+    font-size: 40px;
+    color: aliceblue;} */
+
+/* media querys */
+
+/* .icono {
+    font-size: 40px;
+    color: aliceblue;} */
+
+
+@media screen and (max-width: 1024px) {
+    .encabezado {justify-content:space-around ;}
+
+    img.imgPrincipal {width: 100%;}
+    
+    .contenido {display: flex;
+        justify-content:center ;
+    width: 100%;}
+    
+    img.imagenLogo2 {display:flex;
+        height: 40px;
+        align-items: center;
+        justify-items: center;
+        margin-top: 30px;
+        margin-left: 50px;}
+    
+    /* #menubar:target { display: block;} */
+    
+    .pie  { flex-direction:column;
+        align-items: flex-end;
+        justify-content: space-between;
+        width: 100% ;
+        max-height: 100px;}
+    
+    .nav {justify-self: center;
+    margin-top: 15px;} 
+    
+    main .contenido div h1{ font-size: 2rem ;
+            /* background-color: red; */
+        width: 65%;
+        position: absolute;
+        top: 10%;
+        left: 25%;}
+    
+    main .contenido .parrafo
+        {   display: flex;
+            align-self: column;
+            padding: 15px;
+            width: 700px;
+            top: 20%;
+            left: 15%;   }
+        
+    .botonPromos { font-size: 2rem;
+        align-self: center;}
+        main .parrafo_bio h3
+        {color: rgb(12, 12, 12);
+            grid-area: ele3;
+            border: 50% aliceblue;
+            border-radius: 12px;
+            stroke: aliceblue;
+            margin-top: 110px;
+            /* text-align: justify; */
+            padding: 15px;
+            /* position: absolute; */
+            height:fit-content;
+            background-color: rgba(255, 255, 255, 0.25)}
+    
+    }/* fin side */
+
+
+    @media screen and (max-width: 600px){
+
+        .encabezado {width: 100%; 
+            display: flex;
+            flex-direction:row;
+            align-items: center;} 
+
+            
+        img.imagenLogo2 {margin-bottom: 10px;
+            height: 30px;}
+
+
+    .encabezado__icono { display: flex;
+            align-items: flex-start ;
+            text-decoration:none;
+            font-size: 32px;
+            margin-top: 20px;
+            color: aliceblue;
+            text-decoration:none;
+            list-style: none;
+        }
+
+    .nav {display: none;}
+
+            /* Inicio sidebar */
+
+    #menubar .nav_ul {display: flex;
+        max-width: fit-content;
+        margin-bottom: 150px;
+        margin-left: 125px;}
+
+    #menubar{position: fixed;
+    margin-top: 100px;}
+
+#menubar:target {display: block;}
+
+a.abrir {display: flex;}
+
+#menubar a.abrir {display: flex;
+    position: fixed;
+    background-color: red;}
+
+#menubar .nav_li {font-size: 10px; color:aliceblue;}
+
+        /* fin sidebar */
+        
+img.imgPrincipal {width: 100%;
+        object-fit:scale-down;}
+        
+.contenido {display: flex;
+width: 100%;}
+        
+        
+.pie  { flex-direction:column;
+    align-items: flex-end;
+    justify-content: space-between;
+    width: 100% ;
+    max-height: 100px;}
+
+
+main .contenido div h1{ font-size: 2rem ;
+        /* background-color: red; */
+    width: 65%;
+    position: absolute;
+    top: 10%;
+    left: 25%;}
+        
+main .contenido .parrafo
+    {   display: flex;
+        align-self: center;
+        padding: 15px;
+        width: 400px;
+        top: 20%;
+        left: 15%;   }
+    
+.botonPromos { font-size: 1rem; }
+
+        }
