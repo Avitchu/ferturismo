@@ -42,6 +42,9 @@ body{ font-family: 'Poppins', sans-serif;
         justify-content:space-around;
         font-weight: bold;
 }
+a:hover  { transition: 1s;
+    transform: scale(1.2,1.2);
+    color: rgb(255, 255, 255);}
 
 ul li {list-style: none;
     display:flex;
@@ -80,6 +83,11 @@ img.imagenLogo2{
     /* termina header */
 
     /* body */
+img.imagenLogo2:hover{transition: 1s;
+    transform: translateX(10%);
+    transition: 1s;}
+    /* animation-duration: 2s;
+    animation-iteration-count:5s; } */
 
 main .contenido {display: flex;
     text-align:justify;
@@ -119,7 +127,9 @@ main .contenido .parrafo
     height:fit-content;
     top: 20%;   
     left: 55%;
-    background-color: rgba(255, 255, 255, 0.25)}
+    background: rgb(2,0,36, o.25);
+    background: linear-gradient(20deg, rgba(2,0,36,1) 0%, rgba(0,212,255,0.37048322747067575) 0%, rgba(9,9,121,1) 0%, rgba(4,112,189,1) 57%, rgba(0,212,255,1) 100%);
+}
 
 
     /* bio */
@@ -179,6 +189,11 @@ display: flex;
 align-items: center;
 font-size: 2rem }
 
+.botonPromos:hover { transition: TRANSFORM 1s;
+    animation-iteration-count: ;
+    transform: scale(1.2);
+    color: rgb(0, 0, 0);}
+
 .botonComprar
 {background-color: rgba(9, 9, 9, 0.021);
 color: aliceblue;
@@ -217,63 +232,122 @@ main .parrafo_paquetes
     height:fit-content;
     left: 5%;
     background-color: rgba(255, 255, 255, 0.25)}    
+
+
 /* pagina experiencias */
-
-
-main .contenido_exp  {display: flex;
-
-    /* flex-direction: row; */
-    /* image-resolution: 300px; */
-    /* text-align: center;
-    justify-items: center; */
-    /*     text-align:justify; */
+/* main .contenido_exp  {display: flex;
     height: 90%;
     width: 100vw; 
-    }
+    } */
 
-main .contenido_exp .columnas_exp
-    {flex-wrap: wrap;
-    padding-left: 10%;
-    border: black 12px;
-    align-items: center;
-    height: 50%;
-    width: 40%; }
+section.contenido_exp {display: grid;
+        position:static;
+        min-height: 500px;
+        height:100%;
+        width: 100%;
+        margin-left: 10%;
+        grid-template-columns: 40% 40%;
+        grid-template-rows: 20% 50% 30%;
+        grid-template-areas: 
+        "elem1 elem2" 
+        "elem3 elem4"
+        "elem5 elem6";
+        row-gap: 0.5rem;
+        column-gap: 0.5rem;
 
-main .contenido_exp .tituloExp
-{  
-    margin-top: 30px;
-    justify-content: center;
-    font-size: 1.5rem ;
-    color: black;
-    width: 100%;
-    /* margin: 1rem; */
-    text-align: center;
-/* text-shadow:20px */
 }
 
-/* PARRAFOS */
+    div.columnas_exp1{
+    border-radius: 5%;
+    background-color: rgb(242, 242, 242, 0.5);
+    box-sizing: border-box;
+    border: 3px solid #ccc;
+    justify-content: center;
+    align-items: center;
+    position: Static;
+    grid-area: elem1;
+    width: 90%;
+    height: 700px;
+    }   
 
-main .contenido_exp .parrafoExp
-{color: rgb(12, 12, 12);
-    display:flex;
+    main .contenido_exp .tituloExp
+    {grid-area:elem1;
+    margin-top: 5px;
+    position: relative;
+    padding: 1%;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    font-size: 18px;}
+
+    img.imgPrincipalExperiencias 
+    {   grid-area: elem3;
+        position: relative;
+        margin-left: 105px;
+        height: 250px;
+        align-items: center;
+        padding: 1px;
+        object-fit: cover;
+        object-position: top center;
+    }
+
+    main .contenido_exp .parrafoExp1
+    {color: rgb(12, 12, 12);
+    position: relative;
     font-size: 16px;
     border-radius: 5px;
     text-align: justify;
     padding: 1rem;
-    width:100%;
-    height: 50%;
-}    
-main .contenido_exp .imgPrincipalExperiencias 
-{ size-adjust:inherit;
-    /* max-width: 400px; */
-    max-height: 350px;
-    align-items: center;   
-/* margin-left: 10%; */
-    padding: 15px;
-display: block;
-border-image: black 15px;
-}
+    grid-area:elem5;
+    align-items: center;}
 
+
+    div.columnas_exp2 {
+    grid-area: elem2 ;
+    position: Static;
+    box-sizing: border-box;
+    background-color: rgb(242, 242, 242, 0.5);
+    border: 3px solid #ccc;
+    border-radius: 5%;
+    width: 90%;
+    height: 700px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    }   
+    
+    .tituloExp2
+{    grid-area:elem2;
+    /* background-color: blueviolet; */
+    position: relative;
+    margin-top: 5px;
+    padding: 1%;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    font-size: 18px;}
+
+
+main .contenido_exp .parrafoExp2
+    {color: rgb(12, 12, 12);
+    font-size: 16px;
+    border-radius: 5px;
+    position: relative;
+    text-align: justify;
+    padding: 1rem;
+    grid-area:elem6;
+    align-items: center;}
+
+main .contenido_exp img.imgPrincipalExperiencias2 
+{   grid-area:elem4;
+    position: relative;
+    margin-left: 55px;
+    height: 250px;
+    align-items: center;
+    padding: 1px;
+    object-fit: cover;
+    object-position: top center;
+}
     /* termina body */
 
         /* footer*/
@@ -326,6 +400,34 @@ a.abrir {display: none;}
         margin-top: 30px;
         margin-left: 50px;}
     
+
+        section.contenido_exp 
+        {position:relative;
+        margin-top: 35px;
+        -ms-grid-row-align: center;}
+
+        main .contenido_exp .columnas_exp1
+        {max-height: 500px;}
+
+        main .contenido_exp .columnas_exp2
+        {max-height: 500px;}
+        main .contenido_exp .tituloExp
+        {font-size: 16px;}
+
+        main .contenido_exp .tituloExp2
+        {font-size: 16px;}
+
+        main .contenido_exp img.imgPrincipalExperiencias 
+        {max-height: 150px;
+        margin-left: 60px;}
+
+        main .contenido_exp img.imgPrincipalExperiencias2
+        {max-height: 150px;
+        margin-left: 30px ;}
+
+        main .contenido_exp .parrafoExp2 {font-size: 14px;}
+        main .contenido_exp .parrafoExp1{font-size: 14px;}
+
     /* #menubar:target { display: block;} */
     
     .pie  { flex-direction:column;
@@ -404,23 +506,23 @@ a.abrir {display: none;}
     #menubar{position: fixed;
     margin-top: 100px;}
 
-#menubar:target {display: block;}
+    #menubar:target {display: block;}
 
-a.abrir {display: flex;}
+    a.abrir {display: flex;}
 
-#menubar a.abrir {display: flex;
+    #menubar a.abrir {display: flex;
     position: fixed;
     background-color: red;}
 
-#menubar .nav_li {font-size: 10px; color:aliceblue;}
+    #menubar .nav_li {font-size: 10px; color:aliceblue;}
 
         /* fin sidebar */
         
-img.imgPrincipal {width: 100%;
+    img.imgPrincipal {width: 100%;
         object-fit:scale-down;}
         
-.contenido {display: flex;
-width: 100%;}
+    .contenido {display: flex;
+    width: 100%;}
         
         
 .pie  { flex-direction:column;
@@ -447,4 +549,44 @@ main .contenido .parrafo
     
 .botonPromos { font-size: 1rem; }
 
+main  section.contenido_exp 
+{display: flex;
+    position:static;
+max-height: 90%;
+    height:90%;
+    width: 100%;}
+    /* grid-template-columns: 100%;
+    grid-template-rows: 20% 50% 30% 20% 50% 30%;
+    grid-template-areas: 
+    "elem1" 
+    "elem3"
+    "elem5"
+    "elem2" 
+    "elem4"
+    "elem6";} */
+
+        main .contenido_exp .columnas_exp1
+        {max-height: 500px;}
+
+        main .contenido_exp .columnas_exp2
+        {max-height: 500px;
+        padding-top: 0%;}
+
+        main .contenido_exp .tituloExp
+        {font-size: 16px;}
+
+        main .contenido_exp .tituloExp2
+        {font-size: 16px;}
+
+        main .contenido_exp img.imgPrincipalExperiencias 
+        {max-height: 200px;
+        margin-left: 50px;
+        max-height: fit-content;}
+
+        main .contenido_exp img.imgPrincipalExperiencias2
+        {max-height: 150px;
+        margin-left: 30px ;}
+
+        main .contenido_exp .parrafoExp2 {font-size: 14px;}
+        main .contenido_exp .parrafoExp1{font-size: 14px;}
         }
