@@ -42,7 +42,11 @@ body{ font-family: 'Poppins', sans-serif;
         justify-content:space-around;
         font-weight: bold;
 }
-a:hover  { transition: 0.5s;
+/* .imagenLogo .animacion:hover  { transition: 0.5s;
+    transform: scale(1.2,1.2);
+    color: rgb(255, 255, 255);} */
+
+.menu:hover{ transition: 0.5s;
     transform: scale(1.2,1.2);
     color: rgb(255, 255, 255);}
 
@@ -52,37 +56,13 @@ ul li {list-style: none;
     padding: 1rem;
 }
 
-img.imagenLogo{
+/* img.imagenLogo{
     height: 100px;
     display: flex;
     object-fit: contain;
     align-items: flex-end;
-}
-/* .animacion {animation-name: primera;
-animation-duration: 2s;
-animation-iteration-count:5s; 
-}
-
-@keyframes primera{
-    from {scale:1 }
-    to {scale:1.5}
 } */
 
-
-img.imagenLogo2{
-    height: 50px;
-    display: flex;
-    margin-top: 20px;
-    object-fit: contain;
-    align-items: center;
-/*     
-    align-items: center;
-
-    margin-left: -150px; */
-}
-    /* termina header */
-
-    /* body */
 img.imagenLogo2:hover{transition: 1s;
     transform: translateX(10%);
     transition: 1s;}
@@ -393,13 +373,12 @@ a.abrir {display: none;}
     .contenido {display: flex;
         justify-content:center ;
     width: 100%;}
-    
+/*     
     img.imagenLogo2 {display:flex;
-        height: 40px;
         align-items: center;
         justify-items: center;
         margin-top: 30px;
-        margin-left: 50px;}
+        margin-left: 50px;} */
     
 
         section.contenido_exp 
@@ -481,8 +460,8 @@ a.abrir {display: none;}
             align-items: center;} 
 
             
-        img.imagenLogo2 {margin-bottom: 10px;
-            height: 30px;}
+        /* img.imagenLogo2 {margin-bottom: 10px;
+            height: 30px;} */
 
 
     .encabezado__icono { display: flex;
