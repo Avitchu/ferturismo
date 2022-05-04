@@ -102,10 +102,10 @@ main .contenido .parrafo
     text-align: justify;
     padding: 15px;
     position: absolute;
-    width: 500px;
+    width: 50%;
     height:fit-content;
     top: 20%;   
-    left: 55%;
+    left: 35%;
     background: rgba(253, 253, 254, 0.186);
 }
 main .contenido .parrafo:hover{transition: all 3s;
