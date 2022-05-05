@@ -1,12 +1,8 @@
-* {    padding: 0px;
+* {   padding: 0px;
     margin: 0;
     box-sizing: border-box;}
 
-body{ font-family: 'Poppins', sans-serif;
-    /* background-color: black; */
-    size: 100vh;
-    }
-
+    body { min-height: 100vh; }
 /* section {width: 100%;} */
 
     /* header */
@@ -42,6 +38,7 @@ body{ font-family: 'Poppins', sans-serif;
         justify-content:space-around;
         font-weight: bold;
 }
+
 /* .imagenLogo .animacion:hover  { transition: 0.5s;
     transform: scale(1.2,1.2);
     color: rgb(255, 255, 255);} */
@@ -50,34 +47,26 @@ body{ font-family: 'Poppins', sans-serif;
     transform: scale(1.2,1.2);
     color: rgb(255, 255, 255);}
 
+    a.nav-link.menu.fw-bolder.seleccion {color:#CE0166}
+
 ul li {list-style: none;
     display:flex;
     flex-direction:row;
     padding: 1rem;
 }
-
-/* img.imagenLogo{
-    height: 100px;
-    display: flex;
-    object-fit: contain;
-    align-items: flex-end;
-} */
-
+main{font-family: 'Poppins', sans-serif;}
 img.imagenLogo2:hover{transition: 1s;
     transform: translateX(10%);
     transition: 1s;}
-    /* animation-duration: 2s;
-    animation-iteration-count:5s; } */
 
 main .contenido {display: flex;
     text-align:justify;
-    height: 100vh;
+    /* height: 100vh; */
     position: relative;
     }
 
     /* titulo */
 main .contenido div h1{ font-size: 2.5rem ;
-    /* background-color: red; */
 width: 100%;
 position: absolute;
 top: 10%;
@@ -87,14 +76,11 @@ left: 55%;}
 main .contenido div h1 span{color: rgb(255, 255, 255);
 }
 main .contenido .imgPrincipal {width: 100%;
-    /* height: 100%;  */
-    /* object-fit:cover; */
-    /* display: block; */
 }
 
   /*experiencias */
 
-main .contenido .parrafo
+.parrafo
 {color: rgb(12, 12, 12);
     border: 50% aliceblue;
     border-radius: 15px;
@@ -102,12 +88,13 @@ main .contenido .parrafo
     text-align: justify;
     padding: 15px;
     position: absolute;
-    width: 50%;
+    width: 800px;
     height:fit-content;
     top: 20%;   
     left: 25%;
     background: rgba(253, 253, 254, 0.186);
 }
+
 main .contenido .parrafo:hover{transition: all 3s;
     color: rgb(0, 0, 0);
     scale: (1.2);
@@ -142,19 +129,15 @@ main .parrafo_bio h3
             border: 50% aliceblue;
             border-radius: 12px;
             stroke: aliceblue;
-            /* margin-top: 50px; */
-            /* text-align: justify; */
             padding: 15px;
-            /* position: absolute; */
             height:fit-content;
             background-color: rgba(255, 255, 255, 0.25)}
-            
+
 div .imgPrincipal--grande {width: 100%;
-        /* height: 100%; */
         grid-area: ele2;
         object-fit: cover;
         border: 50% aliceblue;
-            border-radius: 12px;
+        border-radius: 12px;
         }
     
 
@@ -216,10 +199,6 @@ main .parrafo_paquetes
 
 
 /* pagina experiencias */
-/* main .contenido_exp  {display: flex;
-    height: 90%;
-    width: 100vw; 
-    } */
 
 section.contenido_exp {display: grid;
         position:static;
@@ -350,21 +329,6 @@ max-height: 100px;}
 
 a.abrir {display: none;}
 
-/* .abrir
-{font-size: 20px rgb(0, 170, 255);
-} */
-
-/* .fa-brands{
-    font-size: 40px;
-    color: aliceblue;} */
-
-/* media querys */
-
-/* .icono {
-    font-size: 40px;
-    color: aliceblue;} */
-
-
 @media screen and (max-width: 1024px) {
     .encabezado {justify-content:space-around ;}
 
@@ -373,6 +337,11 @@ a.abrir {display: none;}
     .contenido {display: flex;
         justify-content:center ;
     width: 100%;}
+
+    div.parrafo{  left: 5%;
+        width: 500px;
+        max-height: 800px;
+        max-width: 900px}
 /*     
     img.imagenLogo2 {display:flex;
         align-items: center;
@@ -380,7 +349,8 @@ a.abrir {display: none;}
         margin-top: 30px;
         margin-left: 50px;} */
     
-
+h4 {max-height: 600px;
+font-size: 85%;}
         section.contenido_exp 
         {position:relative;
         margin-top: 35px;
@@ -427,12 +397,14 @@ a.abrir {display: none;}
         left: 25%;}
     
     main .contenido .parrafo
-        {   display: flex;
+        {   
+            /* display: flex; */
             align-self: column;
             padding: 15px;
-            width: 700px;
+            /* width: 700px; */
             top: 20%;
-            left: 15%;   }
+            /* left: 15%;   } */}
+
         
     .botonPromos { font-size: 2rem;
         align-self: center;}
@@ -459,11 +431,6 @@ a.abrir {display: none;}
             flex-direction:row;
             align-items: center;} 
 
-            
-        /* img.imagenLogo2 {margin-bottom: 10px;
-            height: 30px;} */
-
-
     .encabezado__icono { display: flex;
             align-items: flex-start ;
             text-decoration:none;
@@ -473,6 +440,9 @@ a.abrir {display: none;}
             text-decoration:none;
             list-style: none;
         }
+
+        h4 {max-height: 360px;
+            font-size: 55%;}
 
     .nav {display: none;}
 
@@ -503,7 +473,13 @@ a.abrir {display: none;}
         
     .contenido {display: flex;
     width: 100%;}
-        
+    
+   div.parrafo{
+    max-width: 300px;
+    /* min-height: 400px; */
+    /* max-height: 600px; */
+    /* max-width: 550px */
+}
         
 .pie  { flex-direction:column;
     align-items: flex-end;
@@ -513,7 +489,6 @@ a.abrir {display: none;}
 
 
 main .contenido div h1{ font-size: 2rem ;
-        /* background-color: red; */
     width: 65%;
     position: absolute;
     top: 10%;
@@ -535,16 +510,6 @@ main  section.contenido_exp
 max-height: 90%;
     height:90%;
     width: 100%;}
-    /* grid-template-columns: 100%;
-    grid-template-rows: 20% 50% 30% 20% 50% 30%;
-    grid-template-areas: 
-    "elem1" 
-    "elem3"
-    "elem5"
-    "elem2" 
-    "elem4"
-    "elem6";} */
-
         main .contenido_exp .columnas_exp1
         {max-height: 500px;}
 
