@@ -1,0 +1,20 @@
+{
+  "name": "fercat---avigliano",
+  "version": "1.0.0",
+  "description": "Pagina de prueba Fertravel\r <h1 align=\"center\">Hi 👋, I'm Avitchu</h1>\r <h3 align=\"center\">Estudiante de desarrollo web</h3>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "sass style.scss ./css/style.min.css -w --no-source-map -s compressed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Avitchu/ferturismo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Avitchu/ferturismo/issues"
+  },
+  "homepage": "https://github.com/Avitchu/ferturismo#readme"
+}

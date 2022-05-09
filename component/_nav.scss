@@ -1,0 +1,33 @@
+
+
+    .header{display:block;
+        width: 100%;
+        background-color: black;
+    }
+    .encabezado {
+        display: flex;
+        /* position: bottom; */
+        height: 100px;
+        width: 100%;
+        justify-content: space-around;
+        /* position: fixed; */
+    }
+    .encabezado__icono {
+        display: none;
+    }
+
+.menu:hover{ transition: 0.5s;
+    transform: scale(1.2,1.2);
+    color: rgb(255, 255, 255);}
+
+ul li {list-style: none;
+    display:flex;
+    flex-direction:row;
+    padding: 1rem;
+}
+
+a.nav-link.menu.fw-bolder.seleccion {color:#CE0166}
+
+img.imagenLogo2:hover{transition: 1s;
+    transform: translateX(10%);
+    transition: 1s;}

@@ -1,0 +1,118 @@
+@media screen and (max-width: 600px){
+
+    .encabezado {width: 100%; 
+        display: flex;
+        flex-direction:row;
+        align-items: center;} 
+
+        
+    /* img.imagenLogo2 {margin-bottom: 10px;
+        height: 30px;} */
+
+
+.encabezado__icono { display: flex;
+        align-items: flex-start ;
+        text-decoration:none;
+        font-size: 32px;
+        margin-top: 20px;
+        color: aliceblue;
+        text-decoration:none;
+        list-style: none;
+    }
+
+.nav {display: none;}
+
+        /* Inicio sidebar */
+
+#menubar .nav_ul {display: flex;
+    max-width: fit-content;
+    margin-bottom: 150px;
+    margin-left: 125px;}
+
+#menubar{position: fixed;
+margin-top: 100px;}
+
+#menubar:target {display: block;}
+
+a.abrir {display: flex;}
+
+#menubar a.abrir {display: flex;
+position: fixed;
+background-color: red;}
+
+#menubar .nav_li {font-size: 10px; color:aliceblue;}
+
+    /* fin sidebar */
+    
+img.imgPrincipal {width: 100%;
+    object-fit:scale-down;}
+    
+.contenido {display: flex;
+width: 100%;}
+    
+    
+.pie  { flex-direction:column;
+align-items: flex-end;
+justify-content: space-between;
+width: 100% ;
+max-height: 100px;}
+
+
+main .contenido div h1{ font-size: 2rem ;
+    /* background-color: red; */
+width: 65%;
+position: absolute;
+top: 10%;
+left: 25%;}
+    
+main .contenido .parrafo
+{   display: flex;
+    align-self: center;
+    padding: 15px;
+    width: 400px;
+    top: 20%;
+    left: 15%;   }
+
+.botonPromos { font-size: 1rem; }
+
+main  section.contenido_exp 
+{display: flex;
+position:static;
+max-height: 90%;
+height:90%;
+width: 100%;}
+/* grid-template-columns: 100%;
+grid-template-rows: 20% 50% 30% 20% 50% 30%;
+grid-template-areas: 
+"elem1" 
+"elem3"
+"elem5"
+"elem2" 
+"elem4"
+"elem6";} */
+
+    main .contenido_exp .columnas_exp1
+    {max-height: 500px;}
+
+    main .contenido_exp .columnas_exp2
+    {max-height: 500px;
+    padding-top: 0%;}
+
+    main .contenido_exp .tituloExp
+    {font-size: 16px;}
+
+    main .contenido_exp .tituloExp2
+    {font-size: 16px;}
+
+    main .contenido_exp img.imgPrincipalExperiencias 
+    {max-height: 200px;
+    margin-left: 50px;
+    max-height: fit-content;}
+
+    main .contenido_exp img.imgPrincipalExperiencias2
+    {max-height: 150px;
+    margin-left: 30px ;}
+
+    main .contenido_exp .parrafoExp2 {font-size: 14px;}
+    main .contenido_exp .parrafoExp1{font-size: 14px;}
+    }
