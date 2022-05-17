@@ -1,48 +1,64 @@
-
-main .contenido {display: flex;
+.contenido {
+    // display: flex;
     text-align:justify;
-    height: 100vh;
+    /* height: 100vh; */
     position: relative;
+
+    &__imgPrincipal {width: 100%;
+    // height: 100%; 
+    object-fit:cover;
+    background-size: cover;
+    // display: flex;
+}
+/* titulo */
+    &__titulo
+    { font-size: 2.5rem ;
+    // background-color: red; 
+    position: absolute;
+    top: 10%;
+    left: 55%;}
+
+    /* resalta palabra*/
+    &__titulo__Principal span
+    {color: rgb(255, 255, 255);
     }
 
+    &__Parrafo {
+            color: rgb(12, 12, 12);
+            border: 50% aliceblue;
+            border-radius: 15px;
+            stroke: aliceblue;
+            text-align: justify;
+            padding: 15px;
+            position: absolute;
+            width: 800px;
+            height: fit-content;
+            top: 20%;
+            left: 25%;
+            background: rgba(253, 253, 254, 0.186);
+        }
 
-/* titulo */
-.contenido div h1{ font-size: 2.5rem ;
-// background-color: red; 
+    &__Parrafo:hover{transition: all 3s;
+    color: rgb(0, 0, 0);
+    scale: (1.2);
+    background: rgb(2,0,36,0.2);
+    background: linear-gradient(0deg, rgba(2, 0, 36, 0.251) 0%, rgba(255, 255, 255, 0.201) 74%);}
+
+ &__boton {background-color: rgba(9, 9, 9, 0.021);
+color: $bgBotones;
+border: 10px ;
+border-style:inherit;
+line-break: normal;
 position: absolute;
-top: 10%;
-left: 55%;}
+top: 70%;   
+left: 45%;
+display: flex;
+align-items: center;
+font-size: 2rem }
 
-/* resalta palabra*/
-main .contenido div h1 span{color: rgb(255, 255, 255);
-}
-.imgPrincipal {width: 100%;
-/* height: 100%;  */
-object-fit:cover;
-display: block;
-}
-
-main .contenido .parrafo
-{color: rgb(12, 12, 12);
-border: 50% aliceblue;
-border-radius: 15px;
-stroke: aliceblue;
-text-align: justify;
-padding: 15px;
-position: absolute;
-width: 500px;
-height:fit-content;
-top: 20%;   
-left: 55%;
-background: rgba(253, 253, 254, 0.186);
-}
-
-main .contenido .parrafo:hover{transition: all 3s;
-color: rgb(0, 0, 0);
-scale: (1.2);
-background: rgb(2,0,36,0.2);
-background: linear-gradient(0deg, rgba(2, 0, 36, 0.251) 0%, rgba(255, 255, 255, 0.201) 74%);}
-
+&__boton:hover { transition: TRANSFORM 1s;
+    transform: scale(1.2);
+    color: $bgBotonesTransicion}}
 
 
 // bio
@@ -58,25 +74,7 @@ main .parrafo_bio h3
     /* position: absolute; */
     height:fit-content;
     background-color: rgba(255, 255, 255, 0.25)}
-
-
-
-    .botonPromos
-    {background-color: rgba(9, 9, 9, 0.021);
-    color: aliceblue;
-    border: 10px ;
-    border-style:inherit;
-    line-break: normal;
-    position: absolute;
-    top: 70%;   
-    left: 45%;
-    display: flex;
-    align-items: center;
-    font-size: 2rem }
     
-    .botonPromos:hover { transition: TRANSFORM 1s;
-        transform: scale(1.2);
-        color: rgb(0, 0, 0);}
         
         .botonComprar
         {background-color: rgba(9, 9, 9, 0.021);
@@ -93,17 +91,10 @@ main .parrafo_bio h3
         font-size: 2rem }
         
         .planillaContacto
-        {color: rgb(12, 12, 12);
-            border: 50% aliceblue;
-            border-radius: 12px;
-            stroke: aliceblue;
-            text-align: justify;
-            padding: 5px;
-            width: 1000px;
-            height:fit-content;
-            top: 30%;   
-            left: 5%;
-            background-color: rgba(255, 255, 255, 0.25)}
+        {display: flex;
+        align-self: center;
+        max-width: 800px ;
+        margin: 100px auto}
         
         main .parrafo_paquetes
             {color: rgb(12, 12, 12);

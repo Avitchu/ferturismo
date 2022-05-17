@@ -1,16 +1,63 @@
 @media screen and (max-width: 1024px) {
     .encabezado {justify-content:space-around ;}
 
-    img.imgPrincipal {width: 100%;}
-    
+  
     .contenido {display: flex;
         justify-content:center ;
-    width: 100%;}
+    width: 100%;
 
-        section.contenido_exp 
+    &__imgPrincipal{height: 100%;
+        position: absolute;
+        background-size: cover;
+    }
+
+    &__titulo{ font-size: 2rem ;
+        width: 65%;
+        position: absolute;
+        top: 5%;
+        left: 15%;}
+    
+    &__Parrafo
+        {   left: auto;
+            display: flex;
+            font-size: 10px;
+            padding: 15px;
+            max-width: max-content;
+            align-self: center;
+
+            p {
+            
+                h4 {font-size: $fontMovil;}}
+        }
+
+    &__boton  { font-size: 2rem;
+        display: block;
+        align-self: center;}
+
+        main .parrafo_bio h3
+        {color: rgb(12, 12, 12);
+            grid-area: ele3;
+            border: 50% aliceblue;
+            border-radius: 12px;
+            stroke: aliceblue;
+            margin-top: 110px;
+            padding: 15px;
+            height:fit-content;
+            background-color: rgba(255, 255, 255, 0.25);
+        }}
+
+    .pie  { flex-direction:column;
+        align-items: flex-end;
+        justify-content: space-between;
+        width: 100% ;
+        max-height: 100px;}
+    
+    .nav {justify-self: center;
+    margin-top: 15px;} 
+    
+    section.contenido_exp 
         {position:relative;
-        margin-top: 35px;
-        -ms-grid-row-align: center;}
+        margin-top: 35px;}
 
         main .contenido_exp .columnas_exp1
         {max-height: 500px;}
@@ -33,43 +80,5 @@
 
         main .contenido_exp .parrafoExp2 {font-size: 14px;}
         main .contenido_exp .parrafoExp1{font-size: 14px;}
-
-    
-    .pie  { flex-direction:column;
-        align-items: flex-end;
-        justify-content: space-between;
-        width: 100% ;
-        max-height: 100px;}
-    
-    .nav {justify-self: center;
-    margin-top: 15px;} 
-    
-    main .contenido div h1{ font-size: 2rem ;
-        width: 65%;
-        position: absolute;
-        top: 10%;
-        left: 25%;}
-    
-    main .contenido .parrafo
-        {   display: flex;
-            align-self: column;
-            padding: 15px;
-            width: 700px;
-            top: 20%;
-            left: 15%;   }
-        
-    .botonPromos { font-size: 2rem;
-        align-self: center;}
-        main .parrafo_bio h3
-        {color: rgb(12, 12, 12);
-            grid-area: ele3;
-            border: 50% aliceblue;
-            border-radius: 12px;
-            stroke: aliceblue;
-            margin-top: 110px;
-            padding: 15px;
-            height:fit-content;
-            background-color: rgba(255, 255, 255, 0.25);
-        }
     }
 

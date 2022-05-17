@@ -1,80 +1,42 @@
 @media screen and (max-width: 600px){
 
-    .encabezado {width: 100%; 
-        display: flex;
-        flex-direction:row;
-        align-items: center;} 
-
-        
-    /* img.imagenLogo2 {margin-bottom: 10px;
-        height: 30px;} */
+    /* index */
+.contenido 
+{display: flex;
+width: 100%;
 
 
-.encabezado__icono { display: flex;
-        align-items: flex-start ;
-        text-decoration:none;
-        font-size: 32px;
-        margin-top: 20px;
-        color: aliceblue;
-        text-decoration:none;
-        list-style: none;
-    }
-
-.nav {display: none;}
-
-        /* Inicio sidebar */
-
-#menubar .nav_ul {display: flex;
-    max-width: fit-content;
-    margin-bottom: 150px;
-    margin-left: 125px;}
-
-#menubar{position: fixed;
-margin-top: 100px;}
-
-#menubar:target {display: block;}
-
-a.abrir {display: flex;}
-
-#menubar a.abrir {display: flex;
-position: fixed;
-background-color: red;}
-
-#menubar .nav_li {font-size: 10px; color:aliceblue;}
-
-    /* fin sidebar */
-    
-img.imgPrincipal {width: 100%;
+    &__imgPrincipal {width: 100%;
     object-fit:scale-down;}
-    
-.contenido {display: flex;
-width: 100%;}
-    
-    
-.pie  { flex-direction:column;
-align-items: flex-end;
-justify-content: space-between;
-width: 100% ;
-max-height: 100px;}
 
-
-main .contenido div h1{ font-size: 2rem ;
-    /* background-color: red; */
-width: 65%;
-position: absolute;
-top: 10%;
-left: 25%;}
+    &__titulo {
+    font-size: 2rem ;
+    width: 65%;
+    position: absolute;
+    top: 10%;
+    left: 25%;}
     
-main .contenido .parrafo
-{   display: flex;
+    &__Parrafo
+    {   display: flex;
+        max-width: max-content;
     align-self: center;
+    max-width: 500px;
     padding: 15px;
     width: 400px;
     top: 20%;
     left: 15%;   }
 
-.botonPromos { font-size: 1rem; }
+    &__boton  { font-size: 1rem; }}
 
+    .pie  { flex-direction:column;
+        padding-top: 50%;
+        align-items: flex-end;
+        justify-content: space-between;
+        width: 100% ;
+        max-height: 100px;}
+
+
+    /* index */
 main  section.contenido_exp 
 {display: flex;
 position:static;
@@ -115,4 +77,4 @@ grid-template-areas:
 
     main .contenido_exp .parrafoExp2 {font-size: 14px;}
     main .contenido_exp .parrafoExp1{font-size: 14px;}
-    }
+}
