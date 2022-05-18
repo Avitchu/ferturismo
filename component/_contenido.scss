@@ -4,10 +4,12 @@
     /* height: 100vh; */
     position: relative;
 
-    &__imgPrincipal {width: 100%;
+    &__imgPrincipal {
+    // position: cover;
+    width: 100%;
     // height: 100%; 
     object-fit:cover;
-    background-size: cover;
+    background-position: center center;
     // display: flex;
 }
 /* titulo */
@@ -115,6 +117,8 @@ main .parrafo_bio h3
             width: 100vw; 
             } */
         
+            .tarjeta
+
         section.contenido_exp {display: grid;
                 position:static;
                 min-height: 500px;

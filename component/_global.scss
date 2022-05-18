@@ -8,5 +8,18 @@
 .container {display: grid;
 }
 
+// MAPS
+$rrss: (
+    facebook: #55acee,
+    Instagram: #c92d8f,
+);
 
-
+@each $name, $color in $rrss {
+    .#{$name} {font-size: 20px;
+        background-color: $color;
+        margin: 15px 5px;
+        padding: 2px;
+        color: $bgBotones;
+        border-radius: 20px;
+    }
+}
