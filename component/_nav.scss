@@ -5,11 +5,9 @@
     }
     .encabezado {
         display: flex;
-        /* position: bottom; */
         height: 100px;
         width: 100%;
         justify-content: space-around;
-        /* position: fixed; */
     }
     .encabezado__icono {
         display: none;
@@ -37,11 +35,6 @@ a.nav-link.menu.fw-bolder.seleccion {color:#CE0166}
             display: flex;
             flex-direction:row;
             align-items: center;} 
-    
-            
-        /* img.imagenLogo2 {margin-bottom: 10px;
-            height: 30px;} */
-    
     .encabezado__icono { display: flex;
             align-items: flex-start ;
             text-decoration:none;

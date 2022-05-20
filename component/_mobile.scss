@@ -4,8 +4,6 @@
 .contenido 
 {display: flex;
 width: 100%;
-
-
     &__imgPrincipal {width: 100%;
     object-fit:cover;
     background-position: center center;
@@ -46,19 +44,9 @@ position:static;
 max-height: 90%;
 height:90%;
 width: 100%;}
-/* grid-template-columns: 100%;
-grid-template-rows: 20% 50% 30% 20% 50% 30%;
-grid-template-areas: 
-"elem1" 
-"elem3"
-"elem5"
-"elem2" 
-"elem4"
-"elem6";} */
-
     main .contenido_exp .columnas_exp1
     {max-height: 500px;}
-
+    
     main .contenido_exp .columnas_exp2
     {max-height: 500px;
     padding-top: 0%;}
