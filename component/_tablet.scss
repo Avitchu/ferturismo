@@ -1,32 +1,29 @@
 @media screen and (max-width: 1024px) {
     .encabezado {justify-content:space-around ;}
-
-  
     .contenido {display: flex;
         justify-content:center ;
     width: 100%;
 
-    &__imgPrincipal{height: 100%;
-        background-size: cover;
+        &__imgPrincipal{
+        width: 100%;
         object-fit:cover;
         background-position: center center;
         background-size: cover;
-    }
+        }
 
-    &__titulo{ font-size: 2rem ;
+        &__titulo{ font-size: 2rem ;
         width: 65%;
         position: absolute;
         top: 5%;
         left: 15%;}
-    
-    &__Parrafo
+
+        &__Parrafo
         {   left: auto;
             display: flex;
             font-size: 10px;
             padding: 15px;
             max-width: max-content;
             align-self: center;
-
             p {
             
                 h4 {font-size: $fontMovil;}}

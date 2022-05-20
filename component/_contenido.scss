@@ -1,16 +1,13 @@
 .contenido {
     display: flex;
     text-align:justify;
-    /* height: 100vh; */
     position: relative;
 
     &__imgPrincipal {
-    // position: cover;
-    width: 100%;
-    // height: 100%; 
-    object-fit:cover;
-    background-position: center center;
-    // display: flex;
+        width: 100%;
+        object-fit:cover;
+        background-position: center center;
+        background-size: cover;
 }
 /* titulo */
     &__titulo__Principal
@@ -69,7 +66,6 @@ font-size: 2rem }
 .banner__principal{
     background-image: linear-gradient(to left, rgba(253, 253, 255, 0), rgba(255, 255, 255, 0.43)),url(/img/glacier-g0a6dc3c26_1920.jpg);}
 
-
 // bio
 main .parrafo_bio h3
 {color: rgb(12, 12, 12);
@@ -99,12 +95,22 @@ main .parrafo_bio h3
         align-items: center;
         font-size: 2rem }
         
-        .planillaContacto
+    .planillaContacto
         {display: flex;
         align-self: center;
         max-width: 800px ;
-        margin: 100px auto}
-        
+        margin: 100px auto;
+
+        &__formato{
+        --bs-gutter-x: 1.5rem;
+        --bs-gutter-y: 0;
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: calc(-1 * var(--bs-gutter-y));
+        margin-right: calc(-.5 * var(--bs-gutter-x));
+        margin-left: calc(-.5 * var(--bs-gutter-x));
+    }}
+
         main .parrafo_paquetes
             {color: rgb(12, 12, 12);
             border: 50% aliceblue;
