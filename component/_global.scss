@@ -19,7 +19,7 @@ $rrss: (
         background-color: $color;
         margin: 15px 5px;
         padding: 2px;
-        color: $bgBotones;
+        color: map-get($coloresEstaticos, bgBotones);
         border-radius: 20px;
     }
 }

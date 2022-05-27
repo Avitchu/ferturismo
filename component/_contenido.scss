@@ -43,7 +43,7 @@
     background: linear-gradient(0deg, rgba(2, 0, 36, 0.251) 0%, rgba(255, 255, 255, 0.201) 74%);}
 
 &__boton {background-color: rgba(9, 9, 9, 0.021);
-color: $bgBotones;
+color: map-get($coloresEstaticos, bgBotones);
 border: 10px ;
 border-style:inherit;
 line-break: normal;
@@ -54,7 +54,7 @@ font-size: 2rem }
 
 &__boton:hover { transition: TRANSFORM 1s;
     transform: scale(1.2);
-    color: $bgBotonesTransicion}}
+    color: map-get($coloresEstaticos, bgBotonesTransicion)}
 
 .fondo_banner {
         height: 600px;
@@ -109,7 +109,7 @@ main .parrafo_bio h3
         margin-top: calc(-1 * var(--bs-gutter-y));
         margin-right: calc(-.5 * var(--bs-gutter-x));
         margin-left: calc(-.5 * var(--bs-gutter-x));
-    }}
+    }}}
 
         main .parrafo_paquetes
             {color: rgb(12, 12, 12);
@@ -127,13 +127,7 @@ main .parrafo_bio h3
         display:contents}
         
         /* pagina experiencias */
-        /* main .contenido_exp  {display: flex;
-            height: 90%;
-            width: 100vw; 
-            } */
         
-            .tarjeta
-
         section.contenido_exp {display: grid;
                 position:static;
                 min-height: 500px;
@@ -148,7 +142,6 @@ main .parrafo_bio h3
                 "elem5 elem6";
                 row-gap: 0.5rem;
                 column-gap: 0.5rem;
-        
         }
         
             div.columnas_exp1{
@@ -163,7 +156,6 @@ main .parrafo_bio h3
             width: 90%;
             height: 700px;
             }   
-        
             main .contenido_exp .tituloExp
             {grid-area:elem1;
             margin-top: 5px;
@@ -256,7 +248,7 @@ main .parrafo_bio h3
             height: 100%;
             max-width: 100%;
         } 
-        
+
         .pieElementos
         {max-height: 100px;
         max-height: 100px;}
