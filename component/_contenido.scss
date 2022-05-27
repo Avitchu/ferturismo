@@ -44,17 +44,19 @@
 
 &__boton {background-color: rgba(9, 9, 9, 0.021);
 color: map-get($coloresEstaticos, bgBotones);
+background-color: map-get($coloresEstaticos, bgBotonesTransicion );
 border: 10px ;
 border-style:inherit;
 line-break: normal;
 position:relative;
 top: 450px;   
-left: 300px;
+left: 600px;
 font-size: 2rem }
 
 &__boton:hover { transition: TRANSFORM 1s;
     transform: scale(1.2);
-    color: map-get($coloresEstaticos, bgBotonesTransicion)}
+    font-weight: 500;
+    color: map-get($coloresEstaticos, bgBotones)}}
 
 .fondo_banner {
         height: 600px;
@@ -65,7 +67,6 @@ font-size: 2rem }
 }
 .banner__principal{
     background-image: linear-gradient(to left, rgba(253, 253, 255, 0), rgba(255, 255, 255, 0.43)),url(/img/glacier-g0a6dc3c26_1920.jpg);}
-
 // bio
 main .parrafo_bio h3
 {color: rgb(12, 12, 12);
@@ -74,22 +75,19 @@ main .parrafo_bio h3
     border-radius: 12px;
     stroke: aliceblue;
     margin-top: 20px;
-    /* text-align: justify; */
     padding: 15px;
-    /* position: absolute; */
     height:fit-content;
     background-color: rgba(255, 255, 255, 0.25)}
-    
-        
+
         .botonComprar
-        {background-color: rgba(9, 9, 9, 0.021);
+        {background-color: map-get( $listacolores, BgTarjeta1);
         color: aliceblue;
         border: 10px ;
         font-weight: 700;
         border-style:inherit;
         line-break: normal;
         position: absolute;
-        top: 6050%;   
+        // top: 60%;
         left: 65%;
         display: flex;
         align-items: center;
@@ -109,7 +107,7 @@ main .parrafo_bio h3
         margin-top: calc(-1 * var(--bs-gutter-y));
         margin-right: calc(-.5 * var(--bs-gutter-x));
         margin-left: calc(-.5 * var(--bs-gutter-x));
-    }}}
+    }}
 
         main .parrafo_paquetes
             {color: rgb(12, 12, 12);
@@ -117,11 +115,12 @@ main .parrafo_bio h3
             border-radius: 12px;
             stroke: aliceblue;
             text-align: justify;
-            padding: 2rem;
-            width: 800px;
+            font-size: 1.25rem;
+            font-weight: 300;
             height:fit-content;
             left: 5%;
-            background-color: rgba(255, 255, 255, 0.25)}    
+            background-color: rgba(255, 255, 255, 0.25);
+            }    
 
         .img__paquetes { object-fit: cover;
         display:contents}

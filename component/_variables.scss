@@ -14,7 +14,7 @@ $listacolores: map-merge(
 );
 
     %botonitos {
-    width: 100px;
+    // width: 100px;
     text-align: center;
     padding: 5px 0;
     margin: 2px auto;
@@ -37,6 +37,9 @@ $listacolores: map-merge(
     border-radius: 0.25rem;
     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }  
+%botonitos:hover{ font-weight: 500;
+    transition: color map-get( $listacolores,bgBotonesTransicion) .15s ease-in-out, .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
 
 .botones_exp1{
     @extend %botonitos;
