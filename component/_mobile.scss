@@ -16,10 +16,14 @@
         top: 10%;}
 
     &__Parrafo
-    { width: 400px;
+    {   top: 35px;
+        padding: 5px;
+        width: 300px;
+        font-size: 8px;
     left: 5%; 
     // height: 80%;
     margin-bottom: 20px;
+    p h4 {font-size: 75%;}
 }}
 .contenido__boton {
     top: 550px !important;
@@ -30,9 +34,9 @@
     // .fondo_banner{height: 800px;}
 
     .contenido__titulo .contenido__titulo__Principal{
-        font-size: 1.9rem;
+        font-size: 1.5rem;
         position: absolute;
-        top: 15%;
+        top: 10%;
         left: 5%;
 }
 .botonComprar
