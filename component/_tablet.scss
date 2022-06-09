@@ -11,7 +11,7 @@
         background-size: cover;
         }
 
-        &__titulo{ font-size: 2rem ;
+        &__titulo__principal{ font-size: 1rem ;
         width: 65%;
         position: absolute;
         top: 5%;
@@ -22,10 +22,10 @@
             display: flex;
             font-size: 10px;
             padding: 15px;
-            max-width: max-content;
+            max-width: 80%;
+            max-height: 70%;
             align-self: center;
             p {
-            
                 h4 {font-size: $fontMovil;}}
         }
 
@@ -44,6 +44,14 @@
             height:fit-content;
             background-color: rgba(255, 255, 255, 0.25);
         }}
+
+        .botonComprar
+        {font-weight: 500;
+        border-style:inherit;
+        line-break: normal;
+        position: absolute;
+        left: 45% ;
+        }
 
     .pie  { flex-direction:column;
         align-items: flex-end;

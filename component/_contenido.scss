@@ -12,7 +12,6 @@
 /* titulo */
     &__titulo__Principal
     { font-size: 2.5rem ;
-    // background-color: red; 
     position: absolute;
     top: 10%;
     left: 55%;}
@@ -83,21 +82,17 @@ main .parrafo_bio h3
         {background-color: map-get( $listacolores, BgTarjeta1);
         color: aliceblue;
         border: 10px ;
-        font-weight: 700;
+        font-weight: 500;
         border-style:inherit;
         line-break: normal;
         position: absolute;
-        // top: 60%;
         left: 65%;
         display: flex;
         align-items: center;
-        font-size: 2rem }
+        }
         
     .planillaContacto
-        {display: flex;
-        align-self: center;
-        max-width: 800px ;
-        margin: 100px auto;
+        {align-self: center ;
 
         &__formato{
         --bs-gutter-x: 1.5rem;
@@ -111,12 +106,10 @@ main .parrafo_bio h3
 
         main .parrafo_paquetes
             {color: rgb(12, 12, 12);
-            border: 50% aliceblue;
             border-radius: 12px;
             stroke: aliceblue;
             text-align: justify;
             font-size: 1.25rem;
-            font-weight: 300;
             height:fit-content;
             left: 5%;
             background-color: rgba(255, 255, 255, 0.25);
