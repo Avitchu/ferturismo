@@ -53,3 +53,11 @@ $listacolores: map-merge(
     @extend %botonitos;
     background-color: map-get( $listacolores, BgTarjeta3);
 }
+@keyframes slide {
+    0% {
+      transform:translateX(-25%);
+    }
+    100% {
+    transform:translateX(25%);
+    }
+  }
