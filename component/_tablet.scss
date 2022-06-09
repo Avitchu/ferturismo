@@ -1,8 +1,9 @@
 @media screen and (max-width: 1024px) {
     .encabezado {justify-content:space-around ;}
+
     .contenido {display: flex;
         justify-content:center ;
-    width: 100%;
+        width: 100%;
 
         &__imgPrincipal{
         width: 100%;
@@ -11,7 +12,7 @@
         background-size: cover;
         }
 
-        &__titulo__principal{ font-size: 1rem ;
+        &__titulo__principal{ font-size: 1rem!important;
         width: 65%;
         position: absolute;
         top: 5%;
@@ -22,16 +23,18 @@
             display: flex;
             font-size: 10px;
             padding: 15px;
-            max-width: 80%;
-            max-height: 70%;
+            width: 80%;
+            // height: 70%;
             align-self: center;
             p {
-                h4 {font-size: $fontMovil;}}
+                h4 {font-size: 10px;}}
         }
 
-    &__boton  { font-size: 2rem;
-        display: block;
-        align-self: center;}
+        &__boton {
+            top: 400px;
+            left: 5%;
+            font-size: 1rem; }
+            }
 
         main .parrafo_bio h3
         {color: rgb(12, 12, 12);
@@ -87,5 +90,4 @@
 
         main .contenido_exp .parrafoExp2 {font-size: 14px;}
         main .contenido_exp .parrafoExp1{font-size: 14px;}
-    }
 

@@ -1,8 +1,7 @@
 @media screen and (max-width: 600px){
 
     /* index */
-
-    .contenido__titulo .contenido 
+    .contenido 
 {   display: flex;
     width: 100%;
 
@@ -19,10 +18,17 @@
     &__Parrafo
     { width: 400px;
     left: 15%; 
-max-width: 80%;
-max-height: 80%;}
+    // height: 80%;
+    margin-bottom: 20px;
+}}
+.contenido__boton {
+    top: 550px !important;
+    left: 15%;
+    font-size: 1rem;
+}
 
-    &__boton  { font-size: 1rem; }}
+    // .fondo_banner{height: 800px;}
+
     .contenido__titulo .contenido__titulo__Principal{
         font-size: 1.9rem;
         position: absolute;
